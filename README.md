@@ -66,39 +66,3 @@ I am dedicated to delivering a high-quality solution that meets your requirement
 Feel free to reach out with any questions or to discuss specific details further. Thank you for considering my proposal.
 
 [See Notebook]
-
-This code defines the moveZeroes function, which takes an array as input and moves all zeros to the end of the array while maintaining the relative order of the non-zero elements. The function uses a pointer to keep track of the position where the next non-zero element should be placed, and it iterates through the array from the end to the beginning, swapping elements as needed. The example usage at the end demonstrates how to use the function with the provided input array.
-
-[See Notebook]
-
-These modifications include additional examples for handling empty arrays, arrays with all zeroes, arrays with a single element, arrays with no zeroes, and arrays with non-numerics. The code will work for these cases without any errors or unexpected behavior. It includes error-checking mechanisms and handles a variety of input scenarios, contributing to the robustness and reliability of the software.
-
-Time Complexity:
-Empty Array Check:
-
-Constant time (O(1)) operation. The length of the array is obtained in constant time.
-Non-Numeric Check:
-
-The any(!is.numeric(nums)) check iterates through the array once.
-Time complexity: O(n), where n is the length of the array.
-Main Loop (Moving Zeroes):
-
-The loop iterates through each element of the array once.
-Time complexity: O(n), where n is the length of the array.
-Overall, the time complexity is dominated by the loop iteration, and the total time complexity is O(n).
-
-Space Complexity:
-Variables (pointer and temp):
-
-Constant space (O(1)). These variables are not dependent on the size of the input array.
-Example Usage Arrays:
-
-The space used for example usage arrays (input_array, output_array, etc.) is separate from the function's space complexity.
-Space complexity: O(1).
-Input Array (In-Place Modification):
-
-The algorithm modifies the input array in place without using additional space.
-Space complexity: O(1).
-Overall, the space complexity is constant (O(1)).
-
-The provided code has a time complexity of O(n) and a space complexity of O(1), where n is the length of the input array. The algorithm efficiently moves zeroes to the end of the array in-place without requiring additional space. It is a linear-time algorithm with constant space usage.
